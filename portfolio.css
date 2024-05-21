@@ -1,0 +1,131 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+.nav-left {
+    flex: 1;
+}
+
+.nav-right {
+    flex: 2;
+    text-align: right;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #66ccff;
+}
+
+.logo {
+    margin: 0;
+}
+
+header {
+    background-image: url('bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff; /* Ensure text is readable */
+    position: relative; /* To allow overlay */
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and transparency */
+    z-index: 1; /* Ensures the overlay is above the background but below the content */
+}
+
+header .container {
+    position: relative; /* To ensure text is above the overlay */
+    z-index: 2;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    border: 3px solid #fff; 
+}
+
+.box {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.about-box {
+    background-color: #ffcc00;
+}
+
+.skills-box {
+    background-color: #96dbfd;
+}
+
+.projects-box {
+    background-color: #99ff99;
+}
+
+.contact-box {
+    background-color: #efb7ee;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
