@@ -54,14 +54,14 @@ body {
 }
 
 header {
-    background-image: url('bg.jpg'); /* Replace with your image path */
+    background-image: url('bg.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
     padding: 100px 0;
-    color: #fff; /* Ensure text is readable */
-    position: relative; /* To allow overlay */
+    color: #fff; 
+    position: relative; 
 }
 
 header::before {
@@ -71,12 +71,12 @@ header::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and transparency */
-    z-index: 1; /* Ensures the overlay is above the background but below the content */
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
 }
 
 header .container {
-    position: relative; /* To ensure text is above the overlay */
+    position: relative; 
     z-index: 2;
 }
 
